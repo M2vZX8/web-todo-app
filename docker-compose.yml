@@ -5,7 +5,7 @@ services:
     working_dir: /home/user/app
     build:
       context: .
-      dockerfile: ./docker/Dockerfile
+      dockerfile: ./Docker/Dockerfile
     command: /bin/sh
     tty: true
     stdin_open: true
