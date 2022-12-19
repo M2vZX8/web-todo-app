@@ -14,7 +14,7 @@ class TodoItemController extends Controller
      */
     public function index()
     {
-        //
+        return ['sample1' => '1', 'sample2' => '2'];
     }
 
     /**
