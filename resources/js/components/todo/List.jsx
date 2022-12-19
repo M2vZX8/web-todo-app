@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 function List() {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        (async () => {
+        ;(async () => {
             try {
                 const { headers, data } = await axios.get("/api/todos/");
                 setItems(data);
