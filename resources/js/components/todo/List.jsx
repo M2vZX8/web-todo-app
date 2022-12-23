@@ -34,7 +34,7 @@ function List() {
 async function createPost() {
     try {
         const { data } = await axios.post("/api/todos", {
-            "items-contents": "Hello Sample To Do Item",
+            "item-contents": "Hello Sample To Do Item",
         });
         console.log("posted.");
     } catch (err) {
