@@ -19,6 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::resource('todos', TodoItemController::class, ['only' => [
         'index',
@@ -28,4 +29,6 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         'update',
         'destroy',
     ]]);
+    Route::patch('todos/{todo}/done', [TodoItemController::class, 'done']);
+    Route::patch('todos/{todo}/undone', [TodoItemController::class, 'undone']);
 });
