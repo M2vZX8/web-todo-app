@@ -90,10 +90,10 @@ class TodoItemController extends Controller
     */
     public function done(Request $request, $id)
     {
-    $item = TodoItem::where('id', $id)->where('user_id', Auth::user()->id)->first();
-    $item->is_done = true;
-    $item->save();
-    return array('success' => true);
+        $item = TodoItem::where('id', $id)->where('user_id', Auth::user()->id)->first();
+        $item->is_done = true;
+        $item->save();
+        return array('success' => true);
     }
 
     /**
@@ -104,9 +104,9 @@ class TodoItemController extends Controller
     */
     public function undone(Request $request, $id)
     {
-    $item = TodoItem::where('id', $id)->where('user_id', Auth::user()->id)->first();
-    $item->is_done = false;
-    $item->save();
-    return array('success' => true);
+        $item = TodoItem::where('id', $id)->where('user_id', Auth::user()->id)->first();
+        $item->is_done = false;
+        $item->save();
+        return array('success' => true);
     }
 }
