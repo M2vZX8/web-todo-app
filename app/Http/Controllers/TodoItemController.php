@@ -48,10 +48,10 @@ class TodoItemController extends Controller
     {
         $item = TodoItem::where('id', $id)->where('user_id', Auth::user()->id)->first();
         if (!$item) return abort(404);
+        return $item;
     }
 
     /**
-     * Update the specified resource in storage.
      * [PUT|PATCH] Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
