@@ -36,4 +36,5 @@ function List({ items, onUpdated }) {
     </>
   )
 }
+
 export default List
