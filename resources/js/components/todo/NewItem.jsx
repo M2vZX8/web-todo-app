@@ -31,7 +31,7 @@ return (
     <>
       <div className={style.cover}>
        <div className={style.coverTitle}>新規登録</div>
-       <div className={Style.coverInput}>
+       <div className={style.coverInput}>
           <textarea
             className={style.input}
             value={todoContents}
