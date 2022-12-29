@@ -55,7 +55,7 @@ function Item({
   return (
     <div>
       <div className={style.rowCover}>
-        <Input
+        <input
           id={'todo-item-' + id}
           type="checkbox"
           disabled

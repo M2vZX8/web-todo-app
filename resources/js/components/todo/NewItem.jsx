@@ -41,12 +41,12 @@ return (
           />
         </div>
         <div className={style.coverButton}>
-          <Button
+          <button
             className={style.button}
             onClick={() => createItem(todoContents)}
           >
             登録
-          </Button>
+          </button>
         </div>
       </div>
     </>

@@ -30,8 +30,8 @@ function TodoRoot() {
   }
 
   return (
-    <div>
-      <div>
+    <div className={style.container}>
+      <div className={style.row}>
         <h3> Do To </h3>
         <NewItem onUpdated={() => onUpdated()}></NewItem>
         <List items={items} onUpdated={() => onUpdated()}></List>
