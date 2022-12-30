@@ -78,7 +78,7 @@ class TodoItemController extends Controller
      */
     public function destroy(TodoItem $todoItem, $id)
     {
-        TodoItem::where('$id', $id)->where('user_id', Auth::user()->id)->delete();
+        TodoItem::where('id', $id)->where('user_id', Auth::user()->id)->delete();
         return array('success' => true);
     }
 

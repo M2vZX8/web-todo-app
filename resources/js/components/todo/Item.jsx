@@ -78,7 +78,7 @@ function Item({
         <span>作成時: {createdAt}</span>/<span>更新日時: {updatedAt}</span>
       </div>
 
-      <div className={style.rowSubMessage}>
+      <div className={style.coverButton}>
         <div className={style.spacer}></div>
         <button className={style.deleteButton} onClick={() => deleteItem(id)}>
           削除

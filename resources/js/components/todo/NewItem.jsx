@@ -9,7 +9,7 @@ function NewItem({ onUpdated }) {
 
     const createItem = async function (todoContents) {
       try {
-        const { data } = await axios.post('./api/todos', {
+        const { data } = await axios.post('/api/todos', {
           'item-contents': todoContents,
         })
         setTodoContents('')
@@ -35,7 +35,7 @@ return (
           <textarea
             className={style.input}
             value={todoContents}
-            onChange={(V) => {
+            onChange={(v) => {
                setTodoContents(v.target.value)
             }}
           />
