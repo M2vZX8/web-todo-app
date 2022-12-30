@@ -75,7 +75,7 @@ function Item({
         </div>
       </div>
       <div className={style.rowSubMessage}>
-        <span>作成時: {createdAt}</span>/<span>更新日時: {updatedAt}</span>
+        <span>作成日時: {createdAt}</span>/<span>更新日時: {updatedAt}</span>
       </div>
 
       <div className={style.coverButton}>

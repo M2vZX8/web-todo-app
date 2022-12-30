@@ -23,7 +23,7 @@
     flex-direction: row-reverse;
 }
 
-input {
+.input {
     box-sizing: border-box;
     padding: 10px 15px;
     border-radius: 10px;
